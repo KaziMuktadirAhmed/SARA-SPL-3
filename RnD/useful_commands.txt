@@ -1,0 +1,2 @@
+Github Cli:
+Download artifacts:	gh run download <workflow-run-id> -n codeql-results

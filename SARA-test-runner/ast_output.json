@@ -1,0 +1,344 @@
+{
+  "type": "CompilationUnitContext",
+  "children": [
+    {
+      "type": "PackageDeclarationContext",
+      "children": [
+        {
+          "type": "TerminalNode",
+          "text": "package"
+        },
+        {
+          "type": "QualifiedNameContext",
+          "children": [
+            {
+              "type": "IdentifierContext",
+              "children": [
+                {
+                  "type": "TerminalNode",
+                  "text": "app"
+                }
+              ]
+            },
+            {
+              "type": "TerminalNode",
+              "text": "."
+            },
+            {
+              "type": "IdentifierContext",
+              "children": [
+                {
+                  "type": "TerminalNode",
+                  "text": "SARA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TerminalNode",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "type": "TypeDeclarationContext",
+      "children": [
+        {
+          "type": "ClassOrInterfaceModifierContext",
+          "children": [
+            {
+              "type": "TerminalNode",
+              "text": "public"
+            }
+          ]
+        },
+        {
+          "type": "ClassDeclarationContext",
+          "children": [
+            {
+              "type": "TerminalNode",
+              "text": "class"
+            },
+            {
+              "type": "IdentifierContext",
+              "children": [
+                {
+                  "type": "TerminalNode",
+                  "text": "Main"
+                }
+              ]
+            },
+            {
+              "type": "ClassBodyContext",
+              "children": [
+                {
+                  "type": "TerminalNode",
+                  "text": "{"
+                },
+                {
+                  "type": "ClassBodyDeclarationContext",
+                  "children": [
+                    {
+                      "type": "ModifierContext",
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "public"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ModifierContext",
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "static"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "MemberDeclarationContext",
+                      "children": [
+                        {
+                          "type": "MethodDeclarationContext",
+                          "children": [
+                            {
+                              "type": "TypeTypeOrVoidContext",
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "void"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "IdentifierContext",
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "main"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FormalParametersContext",
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "("
+                                },
+                                {
+                                  "type": "FormalParameterListContext",
+                                  "children": [
+                                    {
+                                      "type": "FormalParameterContext",
+                                      "children": [
+                                        {
+                                          "type": "TypeTypeContext",
+                                          "children": [
+                                            {
+                                              "type": "ClassOrInterfaceTypeContext",
+                                              "children": [
+                                                {
+                                                  "type": "TypeIdentifierContext",
+                                                  "children": [
+                                                    {
+                                                      "type": "TerminalNode",
+                                                      "text": "String"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "TerminalNode",
+                                              "text": "["
+                                            },
+                                            {
+                                              "type": "TerminalNode",
+                                              "text": "]"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "VariableDeclaratorIdContext",
+                                          "children": [
+                                            {
+                                              "type": "IdentifierContext",
+                                              "children": [
+                                                {
+                                                  "type": "TerminalNode",
+                                                  "text": "args"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "TerminalNode",
+                                  "text": ")"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "MethodBodyContext",
+                              "children": [
+                                {
+                                  "type": "BlockContext",
+                                  "children": [
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "{"
+                                    },
+                                    {
+                                      "type": "BlockStatementContext",
+                                      "children": [
+                                        {
+                                          "type": "StatementContext",
+                                          "children": [
+                                            {
+                                              "type": "ExpressionContext",
+                                              "children": [
+                                                {
+                                                  "type": "ExpressionContext",
+                                                  "children": [
+                                                    {
+                                                      "type": "ExpressionContext",
+                                                      "children": [
+                                                        {
+                                                          "type": "PrimaryContext",
+                                                          "children": [
+                                                            {
+                                                              "type": "IdentifierContext",
+                                                              "children": [
+                                                                {
+                                                                  "type": "TerminalNode",
+                                                                  "text": "System"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "TerminalNode",
+                                                      "text": "."
+                                                    },
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "out"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "TerminalNode",
+                                                  "text": "."
+                                                },
+                                                {
+                                                  "type": "MethodCallContext",
+                                                  "children": [
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "println"
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "ArgumentsContext",
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "("
+                                                        },
+                                                        {
+                                                          "type": "ExpressionListContext",
+                                                          "children": [
+                                                            {
+                                                              "type": "ExpressionContext",
+                                                              "children": [
+                                                                {
+                                                                  "type": "PrimaryContext",
+                                                                  "children": [
+                                                                    {
+                                                                      "type": "LiteralContext",
+                                                                      "children": [
+                                                                        {
+                                                                          "type": "TerminalNode",
+                                                                          "text": "\"Hello world!\""
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": ")"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "TerminalNode",
+                                              "text": ";"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "}"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "TerminalNode",
+                  "text": "}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

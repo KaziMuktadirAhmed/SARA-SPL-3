@@ -34,8 +34,6 @@ public class test {
         String jsonString = gson.toJson(astJson);
         writeToFile(jsonString);
 
-        System.out.println(jsonString);
-
         System.out.println("finished");
     }
 

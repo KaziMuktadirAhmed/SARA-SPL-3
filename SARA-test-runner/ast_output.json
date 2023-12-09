@@ -1,9 +1,9 @@
 {
   "type": "CompilationUnitContext",
-  "text": "packageapp.SARA;publicclassMain{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");}}",
+  "text": "packageapp.SARA;publicclassMain{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");newtest().run();}privatestaticvoidhi(){System.out.println(\"hi\");}privatestaticvoidhi2(){System.out.println(\"hi2\");}privatestaticvoidhi3(){System.out.println(\"hi3\");}}",
   "startLine": 1,
   "startColumn": 0,
-  "endLine": 7,
+  "endLine": 21,
   "endColumn": 1,
   "children": [
     {
@@ -88,10 +88,10 @@
     },
     {
       "type": "TypeDeclarationContext",
-      "text": "publicclassMain{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");}}",
+      "text": "publicclassMain{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");newtest().run();}privatestaticvoidhi(){System.out.println(\"hi\");}privatestaticvoidhi2(){System.out.println(\"hi2\");}privatestaticvoidhi3(){System.out.println(\"hi3\");}}",
       "startLine": 3,
       "startColumn": 0,
-      "endLine": 7,
+      "endLine": 21,
       "endColumn": 1,
       "children": [
         {
@@ -114,10 +114,10 @@
         },
         {
           "type": "ClassDeclarationContext",
-          "text": "classMain{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");}}",
+          "text": "classMain{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");newtest().run();}privatestaticvoidhi(){System.out.println(\"hi\");}privatestaticvoidhi2(){System.out.println(\"hi2\");}privatestaticvoidhi3(){System.out.println(\"hi3\");}}",
           "startLine": 3,
           "startColumn": 7,
-          "endLine": 7,
+          "endLine": 21,
           "endColumn": 1,
           "children": [
             {
@@ -148,10 +148,10 @@
             },
             {
               "type": "ClassBodyContext",
-              "text": "{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");}}",
+              "text": "{publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");newtest().run();}privatestaticvoidhi(){System.out.println(\"hi\");}privatestaticvoidhi2(){System.out.println(\"hi2\");}privatestaticvoidhi3(){System.out.println(\"hi3\");}}",
               "startLine": 3,
               "startColumn": 18,
-              "endLine": 7,
+              "endLine": 21,
               "endColumn": 1,
               "children": [
                 {
@@ -164,10 +164,10 @@
                 },
                 {
                   "type": "ClassBodyDeclarationContext",
-                  "text": "publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");}",
+                  "text": "publicstaticvoidmain(String[]args){System.out.println(\"Hello world!\");newtest().run();}",
                   "startLine": 4,
                   "startColumn": 4,
-                  "endLine": 6,
+                  "endLine": 8,
                   "endColumn": 5,
                   "children": [
                     {
@@ -228,18 +228,18 @@
                     },
                     {
                       "type": "MemberDeclarationContext",
-                      "text": "voidmain(String[]args){System.out.println(\"Hello world!\");}",
+                      "text": "voidmain(String[]args){System.out.println(\"Hello world!\");newtest().run();}",
                       "startLine": 4,
                       "startColumn": 18,
-                      "endLine": 6,
+                      "endLine": 8,
                       "endColumn": 5,
                       "children": [
                         {
                           "type": "MethodDeclarationContext",
-                          "text": "voidmain(String[]args){System.out.println(\"Hello world!\");}",
+                          "text": "voidmain(String[]args){System.out.println(\"Hello world!\");newtest().run();}",
                           "startLine": 4,
                           "startColumn": 18,
-                          "endLine": 6,
+                          "endLine": 8,
                           "endColumn": 5,
                           "children": [
                             {
@@ -408,18 +408,18 @@
                             },
                             {
                               "type": "MethodBodyContext",
-                              "text": "{System.out.println(\"Hello world!\");}",
+                              "text": "{System.out.println(\"Hello world!\");newtest().run();}",
                               "startLine": 4,
                               "startColumn": 43,
-                              "endLine": 6,
+                              "endLine": 8,
                               "endColumn": 5,
                               "children": [
                                 {
                                   "type": "BlockContext",
-                                  "text": "{System.out.println(\"Hello world!\");}",
+                                  "text": "{System.out.println(\"Hello world!\");newtest().run();}",
                                   "startLine": 4,
                                   "startColumn": 43,
-                                  "endLine": 6,
+                                  "endLine": 8,
                                   "endColumn": 5,
                                   "children": [
                                     {
@@ -653,11 +653,1421 @@
                                       ]
                                     },
                                     {
+                                      "type": "BlockStatementContext",
+                                      "text": "newtest().run();",
+                                      "startLine": 6,
+                                      "startColumn": 8,
+                                      "endLine": 6,
+                                      "endColumn": 25,
+                                      "children": [
+                                        {
+                                          "type": "StatementContext",
+                                          "text": "newtest().run();",
+                                          "startLine": 6,
+                                          "startColumn": 8,
+                                          "endLine": 6,
+                                          "endColumn": 25,
+                                          "children": [
+                                            {
+                                              "type": "ExpressionContext",
+                                              "text": "newtest().run()",
+                                              "startLine": 6,
+                                              "startColumn": 8,
+                                              "endLine": 6,
+                                              "endColumn": 24,
+                                              "children": [
+                                                {
+                                                  "type": "ExpressionContext",
+                                                  "text": "newtest()",
+                                                  "startLine": 6,
+                                                  "startColumn": 8,
+                                                  "endLine": 6,
+                                                  "endColumn": 18,
+                                                  "children": [
+                                                    {
+                                                      "type": "TerminalNode",
+                                                      "text": "new",
+                                                      "startLine": 6,
+                                                      "startColumn": 8,
+                                                      "endLine": 6,
+                                                      "endColumn": 11
+                                                    },
+                                                    {
+                                                      "type": "CreatorContext",
+                                                      "text": "test()",
+                                                      "startLine": 6,
+                                                      "startColumn": 12,
+                                                      "endLine": 6,
+                                                      "endColumn": 18,
+                                                      "children": [
+                                                        {
+                                                          "type": "CreatedNameContext",
+                                                          "text": "test",
+                                                          "startLine": 6,
+                                                          "startColumn": 12,
+                                                          "endLine": 6,
+                                                          "endColumn": 16,
+                                                          "children": [
+                                                            {
+                                                              "type": "IdentifierContext",
+                                                              "text": "test",
+                                                              "startLine": 6,
+                                                              "startColumn": 12,
+                                                              "endLine": 6,
+                                                              "endColumn": 16,
+                                                              "children": [
+                                                                {
+                                                                  "type": "TerminalNode",
+                                                                  "text": "test",
+                                                                  "startLine": 6,
+                                                                  "startColumn": 12,
+                                                                  "endLine": 6,
+                                                                  "endColumn": 16
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "ClassCreatorRestContext",
+                                                          "text": "()",
+                                                          "startLine": 6,
+                                                          "startColumn": 16,
+                                                          "endLine": 6,
+                                                          "endColumn": 18,
+                                                          "children": [
+                                                            {
+                                                              "type": "ArgumentsContext",
+                                                              "text": "()",
+                                                              "startLine": 6,
+                                                              "startColumn": 16,
+                                                              "endLine": 6,
+                                                              "endColumn": 18,
+                                                              "children": [
+                                                                {
+                                                                  "type": "TerminalNode",
+                                                                  "text": "(",
+                                                                  "startLine": 6,
+                                                                  "startColumn": 16,
+                                                                  "endLine": 6,
+                                                                  "endColumn": 17
+                                                                },
+                                                                {
+                                                                  "type": "TerminalNode",
+                                                                  "text": ")",
+                                                                  "startLine": 6,
+                                                                  "startColumn": 17,
+                                                                  "endLine": 6,
+                                                                  "endColumn": 18
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "TerminalNode",
+                                                  "text": ".",
+                                                  "startLine": 6,
+                                                  "startColumn": 18,
+                                                  "endLine": 6,
+                                                  "endColumn": 19
+                                                },
+                                                {
+                                                  "type": "MethodCallContext",
+                                                  "text": "run()",
+                                                  "startLine": 6,
+                                                  "startColumn": 19,
+                                                  "endLine": 6,
+                                                  "endColumn": 24,
+                                                  "children": [
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "text": "run",
+                                                      "startLine": 6,
+                                                      "startColumn": 19,
+                                                      "endLine": 6,
+                                                      "endColumn": 22,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "run",
+                                                          "startLine": 6,
+                                                          "startColumn": 19,
+                                                          "endLine": 6,
+                                                          "endColumn": 22
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "ArgumentsContext",
+                                                      "text": "()",
+                                                      "startLine": 6,
+                                                      "startColumn": 22,
+                                                      "endLine": 6,
+                                                      "endColumn": 24,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "(",
+                                                          "startLine": 6,
+                                                          "startColumn": 22,
+                                                          "endLine": 6,
+                                                          "endColumn": 23
+                                                        },
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": ")",
+                                                          "startLine": 6,
+                                                          "startColumn": 23,
+                                                          "endLine": 6,
+                                                          "endColumn": 24
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "TerminalNode",
+                                              "text": ";",
+                                              "startLine": 6,
+                                              "startColumn": 24,
+                                              "endLine": 6,
+                                              "endColumn": 25
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
                                       "type": "TerminalNode",
                                       "text": "}",
-                                      "startLine": 6,
+                                      "startLine": 8,
                                       "startColumn": 4,
-                                      "endLine": 6,
+                                      "endLine": 8,
+                                      "endColumn": 5
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ClassBodyDeclarationContext",
+                  "text": "privatestaticvoidhi(){System.out.println(\"hi\");}",
+                  "startLine": 10,
+                  "startColumn": 4,
+                  "endLine": 12,
+                  "endColumn": 5,
+                  "children": [
+                    {
+                      "type": "ModifierContext",
+                      "text": "private",
+                      "startLine": 10,
+                      "startColumn": 4,
+                      "endLine": 10,
+                      "endColumn": 11,
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "text": "private",
+                          "startLine": 10,
+                          "startColumn": 4,
+                          "endLine": 10,
+                          "endColumn": 11,
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "private",
+                              "startLine": 10,
+                              "startColumn": 4,
+                              "endLine": 10,
+                              "endColumn": 11
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ModifierContext",
+                      "text": "static",
+                      "startLine": 10,
+                      "startColumn": 12,
+                      "endLine": 10,
+                      "endColumn": 18,
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "text": "static",
+                          "startLine": 10,
+                          "startColumn": 12,
+                          "endLine": 10,
+                          "endColumn": 18,
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "static",
+                              "startLine": 10,
+                              "startColumn": 12,
+                              "endLine": 10,
+                              "endColumn": 18
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "MemberDeclarationContext",
+                      "text": "voidhi(){System.out.println(\"hi\");}",
+                      "startLine": 10,
+                      "startColumn": 19,
+                      "endLine": 12,
+                      "endColumn": 5,
+                      "children": [
+                        {
+                          "type": "MethodDeclarationContext",
+                          "text": "voidhi(){System.out.println(\"hi\");}",
+                          "startLine": 10,
+                          "startColumn": 19,
+                          "endLine": 12,
+                          "endColumn": 5,
+                          "children": [
+                            {
+                              "type": "TypeTypeOrVoidContext",
+                              "text": "void",
+                              "startLine": 10,
+                              "startColumn": 19,
+                              "endLine": 10,
+                              "endColumn": 23,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "void",
+                                  "startLine": 10,
+                                  "startColumn": 19,
+                                  "endLine": 10,
+                                  "endColumn": 23
+                                }
+                              ]
+                            },
+                            {
+                              "type": "IdentifierContext",
+                              "text": "hi",
+                              "startLine": 10,
+                              "startColumn": 24,
+                              "endLine": 10,
+                              "endColumn": 26,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "hi",
+                                  "startLine": 10,
+                                  "startColumn": 24,
+                                  "endLine": 10,
+                                  "endColumn": 26
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FormalParametersContext",
+                              "text": "()",
+                              "startLine": 10,
+                              "startColumn": 26,
+                              "endLine": 10,
+                              "endColumn": 28,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "(",
+                                  "startLine": 10,
+                                  "startColumn": 26,
+                                  "endLine": 10,
+                                  "endColumn": 27
+                                },
+                                {
+                                  "type": "TerminalNode",
+                                  "text": ")",
+                                  "startLine": 10,
+                                  "startColumn": 27,
+                                  "endLine": 10,
+                                  "endColumn": 28
+                                }
+                              ]
+                            },
+                            {
+                              "type": "MethodBodyContext",
+                              "text": "{System.out.println(\"hi\");}",
+                              "startLine": 10,
+                              "startColumn": 29,
+                              "endLine": 12,
+                              "endColumn": 5,
+                              "children": [
+                                {
+                                  "type": "BlockContext",
+                                  "text": "{System.out.println(\"hi\");}",
+                                  "startLine": 10,
+                                  "startColumn": 29,
+                                  "endLine": 12,
+                                  "endColumn": 5,
+                                  "children": [
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "{",
+                                      "startLine": 10,
+                                      "startColumn": 29,
+                                      "endLine": 10,
+                                      "endColumn": 30
+                                    },
+                                    {
+                                      "type": "BlockStatementContext",
+                                      "text": "System.out.println(\"hi\");",
+                                      "startLine": 11,
+                                      "startColumn": 8,
+                                      "endLine": 11,
+                                      "endColumn": 33,
+                                      "children": [
+                                        {
+                                          "type": "StatementContext",
+                                          "text": "System.out.println(\"hi\");",
+                                          "startLine": 11,
+                                          "startColumn": 8,
+                                          "endLine": 11,
+                                          "endColumn": 33,
+                                          "children": [
+                                            {
+                                              "type": "ExpressionContext",
+                                              "text": "System.out.println(\"hi\")",
+                                              "startLine": 11,
+                                              "startColumn": 8,
+                                              "endLine": 11,
+                                              "endColumn": 32,
+                                              "children": [
+                                                {
+                                                  "type": "ExpressionContext",
+                                                  "text": "System.out",
+                                                  "startLine": 11,
+                                                  "startColumn": 8,
+                                                  "endLine": 11,
+                                                  "endColumn": 18,
+                                                  "children": [
+                                                    {
+                                                      "type": "ExpressionContext",
+                                                      "text": "System",
+                                                      "startLine": 11,
+                                                      "startColumn": 8,
+                                                      "endLine": 11,
+                                                      "endColumn": 14,
+                                                      "children": [
+                                                        {
+                                                          "type": "PrimaryContext",
+                                                          "text": "System",
+                                                          "startLine": 11,
+                                                          "startColumn": 8,
+                                                          "endLine": 11,
+                                                          "endColumn": 14,
+                                                          "children": [
+                                                            {
+                                                              "type": "IdentifierContext",
+                                                              "text": "System",
+                                                              "startLine": 11,
+                                                              "startColumn": 8,
+                                                              "endLine": 11,
+                                                              "endColumn": 14,
+                                                              "children": [
+                                                                {
+                                                                  "type": "TerminalNode",
+                                                                  "text": "System",
+                                                                  "startLine": 11,
+                                                                  "startColumn": 8,
+                                                                  "endLine": 11,
+                                                                  "endColumn": 14
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "TerminalNode",
+                                                      "text": ".",
+                                                      "startLine": 11,
+                                                      "startColumn": 14,
+                                                      "endLine": 11,
+                                                      "endColumn": 15
+                                                    },
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "text": "out",
+                                                      "startLine": 11,
+                                                      "startColumn": 15,
+                                                      "endLine": 11,
+                                                      "endColumn": 18,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "out",
+                                                          "startLine": 11,
+                                                          "startColumn": 15,
+                                                          "endLine": 11,
+                                                          "endColumn": 18
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "TerminalNode",
+                                                  "text": ".",
+                                                  "startLine": 11,
+                                                  "startColumn": 18,
+                                                  "endLine": 11,
+                                                  "endColumn": 19
+                                                },
+                                                {
+                                                  "type": "MethodCallContext",
+                                                  "text": "println(\"hi\")",
+                                                  "startLine": 11,
+                                                  "startColumn": 19,
+                                                  "endLine": 11,
+                                                  "endColumn": 32,
+                                                  "children": [
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "text": "println",
+                                                      "startLine": 11,
+                                                      "startColumn": 19,
+                                                      "endLine": 11,
+                                                      "endColumn": 26,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "println",
+                                                          "startLine": 11,
+                                                          "startColumn": 19,
+                                                          "endLine": 11,
+                                                          "endColumn": 26
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "ArgumentsContext",
+                                                      "text": "(\"hi\")",
+                                                      "startLine": 11,
+                                                      "startColumn": 26,
+                                                      "endLine": 11,
+                                                      "endColumn": 32,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "(",
+                                                          "startLine": 11,
+                                                          "startColumn": 26,
+                                                          "endLine": 11,
+                                                          "endColumn": 27
+                                                        },
+                                                        {
+                                                          "type": "ExpressionListContext",
+                                                          "text": "\"hi\"",
+                                                          "startLine": 11,
+                                                          "startColumn": 27,
+                                                          "endLine": 11,
+                                                          "endColumn": 31,
+                                                          "children": [
+                                                            {
+                                                              "type": "ExpressionContext",
+                                                              "text": "\"hi\"",
+                                                              "startLine": 11,
+                                                              "startColumn": 27,
+                                                              "endLine": 11,
+                                                              "endColumn": 31,
+                                                              "children": [
+                                                                {
+                                                                  "type": "PrimaryContext",
+                                                                  "text": "\"hi\"",
+                                                                  "startLine": 11,
+                                                                  "startColumn": 27,
+                                                                  "endLine": 11,
+                                                                  "endColumn": 31,
+                                                                  "children": [
+                                                                    {
+                                                                      "type": "LiteralContext",
+                                                                      "text": "\"hi\"",
+                                                                      "startLine": 11,
+                                                                      "startColumn": 27,
+                                                                      "endLine": 11,
+                                                                      "endColumn": 31,
+                                                                      "children": [
+                                                                        {
+                                                                          "type": "TerminalNode",
+                                                                          "text": "\"hi\"",
+                                                                          "startLine": 11,
+                                                                          "startColumn": 27,
+                                                                          "endLine": 11,
+                                                                          "endColumn": 31
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": ")",
+                                                          "startLine": 11,
+                                                          "startColumn": 31,
+                                                          "endLine": 11,
+                                                          "endColumn": 32
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "TerminalNode",
+                                              "text": ";",
+                                              "startLine": 11,
+                                              "startColumn": 32,
+                                              "endLine": 11,
+                                              "endColumn": 33
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "}",
+                                      "startLine": 12,
+                                      "startColumn": 4,
+                                      "endLine": 12,
+                                      "endColumn": 5
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ClassBodyDeclarationContext",
+                  "text": "privatestaticvoidhi2(){System.out.println(\"hi2\");}",
+                  "startLine": 14,
+                  "startColumn": 4,
+                  "endLine": 16,
+                  "endColumn": 5,
+                  "children": [
+                    {
+                      "type": "ModifierContext",
+                      "text": "private",
+                      "startLine": 14,
+                      "startColumn": 4,
+                      "endLine": 14,
+                      "endColumn": 11,
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "text": "private",
+                          "startLine": 14,
+                          "startColumn": 4,
+                          "endLine": 14,
+                          "endColumn": 11,
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "private",
+                              "startLine": 14,
+                              "startColumn": 4,
+                              "endLine": 14,
+                              "endColumn": 11
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ModifierContext",
+                      "text": "static",
+                      "startLine": 14,
+                      "startColumn": 12,
+                      "endLine": 14,
+                      "endColumn": 18,
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "text": "static",
+                          "startLine": 14,
+                          "startColumn": 12,
+                          "endLine": 14,
+                          "endColumn": 18,
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "static",
+                              "startLine": 14,
+                              "startColumn": 12,
+                              "endLine": 14,
+                              "endColumn": 18
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "MemberDeclarationContext",
+                      "text": "voidhi2(){System.out.println(\"hi2\");}",
+                      "startLine": 14,
+                      "startColumn": 19,
+                      "endLine": 16,
+                      "endColumn": 5,
+                      "children": [
+                        {
+                          "type": "MethodDeclarationContext",
+                          "text": "voidhi2(){System.out.println(\"hi2\");}",
+                          "startLine": 14,
+                          "startColumn": 19,
+                          "endLine": 16,
+                          "endColumn": 5,
+                          "children": [
+                            {
+                              "type": "TypeTypeOrVoidContext",
+                              "text": "void",
+                              "startLine": 14,
+                              "startColumn": 19,
+                              "endLine": 14,
+                              "endColumn": 23,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "void",
+                                  "startLine": 14,
+                                  "startColumn": 19,
+                                  "endLine": 14,
+                                  "endColumn": 23
+                                }
+                              ]
+                            },
+                            {
+                              "type": "IdentifierContext",
+                              "text": "hi2",
+                              "startLine": 14,
+                              "startColumn": 24,
+                              "endLine": 14,
+                              "endColumn": 27,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "hi2",
+                                  "startLine": 14,
+                                  "startColumn": 24,
+                                  "endLine": 14,
+                                  "endColumn": 27
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FormalParametersContext",
+                              "text": "()",
+                              "startLine": 14,
+                              "startColumn": 27,
+                              "endLine": 14,
+                              "endColumn": 29,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "(",
+                                  "startLine": 14,
+                                  "startColumn": 27,
+                                  "endLine": 14,
+                                  "endColumn": 28
+                                },
+                                {
+                                  "type": "TerminalNode",
+                                  "text": ")",
+                                  "startLine": 14,
+                                  "startColumn": 28,
+                                  "endLine": 14,
+                                  "endColumn": 29
+                                }
+                              ]
+                            },
+                            {
+                              "type": "MethodBodyContext",
+                              "text": "{System.out.println(\"hi2\");}",
+                              "startLine": 14,
+                              "startColumn": 30,
+                              "endLine": 16,
+                              "endColumn": 5,
+                              "children": [
+                                {
+                                  "type": "BlockContext",
+                                  "text": "{System.out.println(\"hi2\");}",
+                                  "startLine": 14,
+                                  "startColumn": 30,
+                                  "endLine": 16,
+                                  "endColumn": 5,
+                                  "children": [
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "{",
+                                      "startLine": 14,
+                                      "startColumn": 30,
+                                      "endLine": 14,
+                                      "endColumn": 31
+                                    },
+                                    {
+                                      "type": "BlockStatementContext",
+                                      "text": "System.out.println(\"hi2\");",
+                                      "startLine": 15,
+                                      "startColumn": 8,
+                                      "endLine": 15,
+                                      "endColumn": 34,
+                                      "children": [
+                                        {
+                                          "type": "StatementContext",
+                                          "text": "System.out.println(\"hi2\");",
+                                          "startLine": 15,
+                                          "startColumn": 8,
+                                          "endLine": 15,
+                                          "endColumn": 34,
+                                          "children": [
+                                            {
+                                              "type": "ExpressionContext",
+                                              "text": "System.out.println(\"hi2\")",
+                                              "startLine": 15,
+                                              "startColumn": 8,
+                                              "endLine": 15,
+                                              "endColumn": 33,
+                                              "children": [
+                                                {
+                                                  "type": "ExpressionContext",
+                                                  "text": "System.out",
+                                                  "startLine": 15,
+                                                  "startColumn": 8,
+                                                  "endLine": 15,
+                                                  "endColumn": 18,
+                                                  "children": [
+                                                    {
+                                                      "type": "ExpressionContext",
+                                                      "text": "System",
+                                                      "startLine": 15,
+                                                      "startColumn": 8,
+                                                      "endLine": 15,
+                                                      "endColumn": 14,
+                                                      "children": [
+                                                        {
+                                                          "type": "PrimaryContext",
+                                                          "text": "System",
+                                                          "startLine": 15,
+                                                          "startColumn": 8,
+                                                          "endLine": 15,
+                                                          "endColumn": 14,
+                                                          "children": [
+                                                            {
+                                                              "type": "IdentifierContext",
+                                                              "text": "System",
+                                                              "startLine": 15,
+                                                              "startColumn": 8,
+                                                              "endLine": 15,
+                                                              "endColumn": 14,
+                                                              "children": [
+                                                                {
+                                                                  "type": "TerminalNode",
+                                                                  "text": "System",
+                                                                  "startLine": 15,
+                                                                  "startColumn": 8,
+                                                                  "endLine": 15,
+                                                                  "endColumn": 14
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "TerminalNode",
+                                                      "text": ".",
+                                                      "startLine": 15,
+                                                      "startColumn": 14,
+                                                      "endLine": 15,
+                                                      "endColumn": 15
+                                                    },
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "text": "out",
+                                                      "startLine": 15,
+                                                      "startColumn": 15,
+                                                      "endLine": 15,
+                                                      "endColumn": 18,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "out",
+                                                          "startLine": 15,
+                                                          "startColumn": 15,
+                                                          "endLine": 15,
+                                                          "endColumn": 18
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "TerminalNode",
+                                                  "text": ".",
+                                                  "startLine": 15,
+                                                  "startColumn": 18,
+                                                  "endLine": 15,
+                                                  "endColumn": 19
+                                                },
+                                                {
+                                                  "type": "MethodCallContext",
+                                                  "text": "println(\"hi2\")",
+                                                  "startLine": 15,
+                                                  "startColumn": 19,
+                                                  "endLine": 15,
+                                                  "endColumn": 33,
+                                                  "children": [
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "text": "println",
+                                                      "startLine": 15,
+                                                      "startColumn": 19,
+                                                      "endLine": 15,
+                                                      "endColumn": 26,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "println",
+                                                          "startLine": 15,
+                                                          "startColumn": 19,
+                                                          "endLine": 15,
+                                                          "endColumn": 26
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "ArgumentsContext",
+                                                      "text": "(\"hi2\")",
+                                                      "startLine": 15,
+                                                      "startColumn": 26,
+                                                      "endLine": 15,
+                                                      "endColumn": 33,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "(",
+                                                          "startLine": 15,
+                                                          "startColumn": 26,
+                                                          "endLine": 15,
+                                                          "endColumn": 27
+                                                        },
+                                                        {
+                                                          "type": "ExpressionListContext",
+                                                          "text": "\"hi2\"",
+                                                          "startLine": 15,
+                                                          "startColumn": 27,
+                                                          "endLine": 15,
+                                                          "endColumn": 32,
+                                                          "children": [
+                                                            {
+                                                              "type": "ExpressionContext",
+                                                              "text": "\"hi2\"",
+                                                              "startLine": 15,
+                                                              "startColumn": 27,
+                                                              "endLine": 15,
+                                                              "endColumn": 32,
+                                                              "children": [
+                                                                {
+                                                                  "type": "PrimaryContext",
+                                                                  "text": "\"hi2\"",
+                                                                  "startLine": 15,
+                                                                  "startColumn": 27,
+                                                                  "endLine": 15,
+                                                                  "endColumn": 32,
+                                                                  "children": [
+                                                                    {
+                                                                      "type": "LiteralContext",
+                                                                      "text": "\"hi2\"",
+                                                                      "startLine": 15,
+                                                                      "startColumn": 27,
+                                                                      "endLine": 15,
+                                                                      "endColumn": 32,
+                                                                      "children": [
+                                                                        {
+                                                                          "type": "TerminalNode",
+                                                                          "text": "\"hi2\"",
+                                                                          "startLine": 15,
+                                                                          "startColumn": 27,
+                                                                          "endLine": 15,
+                                                                          "endColumn": 32
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": ")",
+                                                          "startLine": 15,
+                                                          "startColumn": 32,
+                                                          "endLine": 15,
+                                                          "endColumn": 33
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "TerminalNode",
+                                              "text": ";",
+                                              "startLine": 15,
+                                              "startColumn": 33,
+                                              "endLine": 15,
+                                              "endColumn": 34
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "}",
+                                      "startLine": 16,
+                                      "startColumn": 4,
+                                      "endLine": 16,
+                                      "endColumn": 5
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ClassBodyDeclarationContext",
+                  "text": "privatestaticvoidhi3(){System.out.println(\"hi3\");}",
+                  "startLine": 18,
+                  "startColumn": 4,
+                  "endLine": 20,
+                  "endColumn": 5,
+                  "children": [
+                    {
+                      "type": "ModifierContext",
+                      "text": "private",
+                      "startLine": 18,
+                      "startColumn": 4,
+                      "endLine": 18,
+                      "endColumn": 11,
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "text": "private",
+                          "startLine": 18,
+                          "startColumn": 4,
+                          "endLine": 18,
+                          "endColumn": 11,
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "private",
+                              "startLine": 18,
+                              "startColumn": 4,
+                              "endLine": 18,
+                              "endColumn": 11
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ModifierContext",
+                      "text": "static",
+                      "startLine": 18,
+                      "startColumn": 12,
+                      "endLine": 18,
+                      "endColumn": 18,
+                      "children": [
+                        {
+                          "type": "ClassOrInterfaceModifierContext",
+                          "text": "static",
+                          "startLine": 18,
+                          "startColumn": 12,
+                          "endLine": 18,
+                          "endColumn": 18,
+                          "children": [
+                            {
+                              "type": "TerminalNode",
+                              "text": "static",
+                              "startLine": 18,
+                              "startColumn": 12,
+                              "endLine": 18,
+                              "endColumn": 18
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "MemberDeclarationContext",
+                      "text": "voidhi3(){System.out.println(\"hi3\");}",
+                      "startLine": 18,
+                      "startColumn": 19,
+                      "endLine": 20,
+                      "endColumn": 5,
+                      "children": [
+                        {
+                          "type": "MethodDeclarationContext",
+                          "text": "voidhi3(){System.out.println(\"hi3\");}",
+                          "startLine": 18,
+                          "startColumn": 19,
+                          "endLine": 20,
+                          "endColumn": 5,
+                          "children": [
+                            {
+                              "type": "TypeTypeOrVoidContext",
+                              "text": "void",
+                              "startLine": 18,
+                              "startColumn": 19,
+                              "endLine": 18,
+                              "endColumn": 23,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "void",
+                                  "startLine": 18,
+                                  "startColumn": 19,
+                                  "endLine": 18,
+                                  "endColumn": 23
+                                }
+                              ]
+                            },
+                            {
+                              "type": "IdentifierContext",
+                              "text": "hi3",
+                              "startLine": 18,
+                              "startColumn": 24,
+                              "endLine": 18,
+                              "endColumn": 27,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "hi3",
+                                  "startLine": 18,
+                                  "startColumn": 24,
+                                  "endLine": 18,
+                                  "endColumn": 27
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FormalParametersContext",
+                              "text": "()",
+                              "startLine": 18,
+                              "startColumn": 27,
+                              "endLine": 18,
+                              "endColumn": 29,
+                              "children": [
+                                {
+                                  "type": "TerminalNode",
+                                  "text": "(",
+                                  "startLine": 18,
+                                  "startColumn": 27,
+                                  "endLine": 18,
+                                  "endColumn": 28
+                                },
+                                {
+                                  "type": "TerminalNode",
+                                  "text": ")",
+                                  "startLine": 18,
+                                  "startColumn": 28,
+                                  "endLine": 18,
+                                  "endColumn": 29
+                                }
+                              ]
+                            },
+                            {
+                              "type": "MethodBodyContext",
+                              "text": "{System.out.println(\"hi3\");}",
+                              "startLine": 18,
+                              "startColumn": 30,
+                              "endLine": 20,
+                              "endColumn": 5,
+                              "children": [
+                                {
+                                  "type": "BlockContext",
+                                  "text": "{System.out.println(\"hi3\");}",
+                                  "startLine": 18,
+                                  "startColumn": 30,
+                                  "endLine": 20,
+                                  "endColumn": 5,
+                                  "children": [
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "{",
+                                      "startLine": 18,
+                                      "startColumn": 30,
+                                      "endLine": 18,
+                                      "endColumn": 31
+                                    },
+                                    {
+                                      "type": "BlockStatementContext",
+                                      "text": "System.out.println(\"hi3\");",
+                                      "startLine": 19,
+                                      "startColumn": 8,
+                                      "endLine": 19,
+                                      "endColumn": 34,
+                                      "children": [
+                                        {
+                                          "type": "StatementContext",
+                                          "text": "System.out.println(\"hi3\");",
+                                          "startLine": 19,
+                                          "startColumn": 8,
+                                          "endLine": 19,
+                                          "endColumn": 34,
+                                          "children": [
+                                            {
+                                              "type": "ExpressionContext",
+                                              "text": "System.out.println(\"hi3\")",
+                                              "startLine": 19,
+                                              "startColumn": 8,
+                                              "endLine": 19,
+                                              "endColumn": 33,
+                                              "children": [
+                                                {
+                                                  "type": "ExpressionContext",
+                                                  "text": "System.out",
+                                                  "startLine": 19,
+                                                  "startColumn": 8,
+                                                  "endLine": 19,
+                                                  "endColumn": 18,
+                                                  "children": [
+                                                    {
+                                                      "type": "ExpressionContext",
+                                                      "text": "System",
+                                                      "startLine": 19,
+                                                      "startColumn": 8,
+                                                      "endLine": 19,
+                                                      "endColumn": 14,
+                                                      "children": [
+                                                        {
+                                                          "type": "PrimaryContext",
+                                                          "text": "System",
+                                                          "startLine": 19,
+                                                          "startColumn": 8,
+                                                          "endLine": 19,
+                                                          "endColumn": 14,
+                                                          "children": [
+                                                            {
+                                                              "type": "IdentifierContext",
+                                                              "text": "System",
+                                                              "startLine": 19,
+                                                              "startColumn": 8,
+                                                              "endLine": 19,
+                                                              "endColumn": 14,
+                                                              "children": [
+                                                                {
+                                                                  "type": "TerminalNode",
+                                                                  "text": "System",
+                                                                  "startLine": 19,
+                                                                  "startColumn": 8,
+                                                                  "endLine": 19,
+                                                                  "endColumn": 14
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "TerminalNode",
+                                                      "text": ".",
+                                                      "startLine": 19,
+                                                      "startColumn": 14,
+                                                      "endLine": 19,
+                                                      "endColumn": 15
+                                                    },
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "text": "out",
+                                                      "startLine": 19,
+                                                      "startColumn": 15,
+                                                      "endLine": 19,
+                                                      "endColumn": 18,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "out",
+                                                          "startLine": 19,
+                                                          "startColumn": 15,
+                                                          "endLine": 19,
+                                                          "endColumn": 18
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "TerminalNode",
+                                                  "text": ".",
+                                                  "startLine": 19,
+                                                  "startColumn": 18,
+                                                  "endLine": 19,
+                                                  "endColumn": 19
+                                                },
+                                                {
+                                                  "type": "MethodCallContext",
+                                                  "text": "println(\"hi3\")",
+                                                  "startLine": 19,
+                                                  "startColumn": 19,
+                                                  "endLine": 19,
+                                                  "endColumn": 33,
+                                                  "children": [
+                                                    {
+                                                      "type": "IdentifierContext",
+                                                      "text": "println",
+                                                      "startLine": 19,
+                                                      "startColumn": 19,
+                                                      "endLine": 19,
+                                                      "endColumn": 26,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "println",
+                                                          "startLine": 19,
+                                                          "startColumn": 19,
+                                                          "endLine": 19,
+                                                          "endColumn": 26
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "ArgumentsContext",
+                                                      "text": "(\"hi3\")",
+                                                      "startLine": 19,
+                                                      "startColumn": 26,
+                                                      "endLine": 19,
+                                                      "endColumn": 33,
+                                                      "children": [
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": "(",
+                                                          "startLine": 19,
+                                                          "startColumn": 26,
+                                                          "endLine": 19,
+                                                          "endColumn": 27
+                                                        },
+                                                        {
+                                                          "type": "ExpressionListContext",
+                                                          "text": "\"hi3\"",
+                                                          "startLine": 19,
+                                                          "startColumn": 27,
+                                                          "endLine": 19,
+                                                          "endColumn": 32,
+                                                          "children": [
+                                                            {
+                                                              "type": "ExpressionContext",
+                                                              "text": "\"hi3\"",
+                                                              "startLine": 19,
+                                                              "startColumn": 27,
+                                                              "endLine": 19,
+                                                              "endColumn": 32,
+                                                              "children": [
+                                                                {
+                                                                  "type": "PrimaryContext",
+                                                                  "text": "\"hi3\"",
+                                                                  "startLine": 19,
+                                                                  "startColumn": 27,
+                                                                  "endLine": 19,
+                                                                  "endColumn": 32,
+                                                                  "children": [
+                                                                    {
+                                                                      "type": "LiteralContext",
+                                                                      "text": "\"hi3\"",
+                                                                      "startLine": 19,
+                                                                      "startColumn": 27,
+                                                                      "endLine": 19,
+                                                                      "endColumn": 32,
+                                                                      "children": [
+                                                                        {
+                                                                          "type": "TerminalNode",
+                                                                          "text": "\"hi3\"",
+                                                                          "startLine": 19,
+                                                                          "startColumn": 27,
+                                                                          "endLine": 19,
+                                                                          "endColumn": 32
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "TerminalNode",
+                                                          "text": ")",
+                                                          "startLine": 19,
+                                                          "startColumn": 32,
+                                                          "endLine": 19,
+                                                          "endColumn": 33
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "TerminalNode",
+                                              "text": ";",
+                                              "startLine": 19,
+                                              "startColumn": 33,
+                                              "endLine": 19,
+                                              "endColumn": 34
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "TerminalNode",
+                                      "text": "}",
+                                      "startLine": 20,
+                                      "startColumn": 4,
+                                      "endLine": 20,
                                       "endColumn": 5
                                     }
                                   ]
@@ -673,9 +2083,9 @@
                 {
                   "type": "TerminalNode",
                   "text": "}",
-                  "startLine": 7,
+                  "startLine": 21,
                   "startColumn": 0,
-                  "endLine": 7,
+                  "endLine": 21,
                   "endColumn": 1
                 }
               ]

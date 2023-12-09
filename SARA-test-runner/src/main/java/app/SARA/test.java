@@ -18,13 +18,29 @@ public class test {
                 "public class Main {\n" +
                 "    public static void main(String[] args) {\n" +
                 "        System.out.println(\"Hello world!\");\n" +
+                "        new test().run();\n" +
+                "//        hi\n" +
+                "    }\n" +
+                "    \n" +
+                "    private static void hi() {\n" +
+                "        System.out.println(\"hi\");\n" +
+                "    }\n" +
+                "    \n" +
+                "    private static void hi2() {\n" +
+                "        System.out.println(\"hi2\");\n" +
+                "    }\n" +
+                "    \n" +
+                "    private static void hi3() {\n" +
+                "        System.out.println(\"hi3\");\n" +
                 "    }\n" +
                 "}";
 
         JavaLexer lexer = new JavaLexer(CharStreams.fromString(javaCodeStr));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JavaParser parser = new JavaParser(tokens);
-        ParseTree tree = parser.compilationUnit();
+        ParserRuleContext tree = parser.compilationUnit();
+
+        newTest(12,tree);
 
 //        AST to json conversion
         JsonObject astJson = ASTToJSONConverter.parseTreeToJson(tree);
@@ -35,6 +51,16 @@ public class test {
         writeToFile(jsonString);
 
         System.out.println("finished");
+    }
+
+    private void newTest(int lineNumber, ParserRuleContext parseTree) {
+// Extract function body for the specified line number
+        ParserRuleContext methodContext = MethodFinder.findMethodForLine(lineNumber, parseTree);
+        if (methodContext != null) {
+            System.out.println("Found method for line " + lineNumber + ": " + methodContext.getText());
+        } else {
+            System.out.println("No method found for line " + lineNumber);
+        }
     }
 
     private void writeToFile(String input) {

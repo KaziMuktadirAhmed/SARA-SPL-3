@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="add FunctionBodyExtractor (experimental)">
+    <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="add MethodFinder (working)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/CFG/CFGGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/CFG/CFGNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ast_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/ast_output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/FunctionBodyExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/MethodFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,7 @@
       <module name="SARA-test-runner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="app.SARA.*" />
+          <option name="PATTERN" value="app.SARA.CFG.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,7 +102,7 @@
       <workItem from="1702024263349" duration="1414000" />
       <workItem from="1702038865462" duration="645000" />
       <workItem from="1702044082852" duration="1213000" />
-      <workItem from="1702102884441" duration="6167000" />
+      <workItem from="1702102884441" duration="10289000" />
     </task>
     <task id="LOCAL-00001" summary="from intellij">
       <option name="closed" value="true" />
@@ -143,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702111068939</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add MethodFinder (working)">
+      <option name="closed" value="true" />
+      <created>1702113409563</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702113409563</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +173,8 @@
     <MESSAGE value="from intellij" />
     <MESSAGE value="from intellij laptop" />
     <MESSAGE value="add FunctionBodyExtractor (experimental)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add FunctionBodyExtractor (experimental)" />
+    <MESSAGE value="add MethodFinder (working)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MethodFinder (working)" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

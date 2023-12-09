@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="add MethodFinder (working)">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/CFG/CFGGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/CFG/CFGNode.java" afterDir="false" />
+    <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/DataFlowGraphGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ast_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/ast_output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/CFG/CFGGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/CFG/CFGNode.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,7 @@
       <workItem from="1702024263349" duration="1414000" />
       <workItem from="1702038865462" duration="645000" />
       <workItem from="1702044082852" duration="1213000" />
-      <workItem from="1702102884441" duration="10289000" />
+      <workItem from="1702102884441" duration="13666000" />
     </task>
     <task id="LOCAL-00001" summary="from intellij">
       <option name="closed" value="true" />
@@ -152,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702113409563</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test">
+      <option name="closed" value="true" />
+      <created>1702120690049</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702120690049</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +180,8 @@
     <MESSAGE value="from intellij laptop" />
     <MESSAGE value="add FunctionBodyExtractor (experimental)" />
     <MESSAGE value="add MethodFinder (working)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add MethodFinder (working)" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

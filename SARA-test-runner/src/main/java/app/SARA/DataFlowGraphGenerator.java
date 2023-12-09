@@ -53,7 +53,7 @@ public class DataFlowGraphGenerator {
     }
 
     // Placeholder class for DataFlowGraphNode
-    private class DataFlowGraphNode {
+    static class DataFlowGraphNode {
         private int startLine;
         private int endLine;
         private String codeSnippet;

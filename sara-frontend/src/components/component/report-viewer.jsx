@@ -8,7 +8,8 @@ import { Tabs } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Label } from "@/components/ui/label";
 
-export function ReportViewer() {
+export function ReportViewer({ report }) {
+  console.log("from client side:", report);
   const [selectedTab, setSelectedTab] = useState("All");
 
   const saraTags = ["All", "General", "Trust and Safety", "User Experience"];

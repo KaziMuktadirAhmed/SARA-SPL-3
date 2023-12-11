@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="ok">
-      <change beforePath="$PROJECT_DIR$/../RnD/SARIF report/apollo/java.sarif" beforeDir="false" afterPath="$PROJECT_DIR$/../RnD/SARIF report/apollo/java.sarif" afterDir="false" />
+    <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="really don't know what to do now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sara-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../sara-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sara-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../sara-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sara-frontend/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/../sara-frontend/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sara-frontend/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../sara-frontend/src/app/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ast_output.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -51,7 +49,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -106,6 +104,7 @@
       <workItem from="1702102884441" duration="13666000" />
       <workItem from="1702191128633" duration="5446000" />
       <workItem from="1702228117644" duration="19607000" />
+      <workItem from="1702324534552" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="from intellij">
       <option name="closed" value="true" />

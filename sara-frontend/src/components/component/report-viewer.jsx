@@ -92,7 +92,10 @@ export function ReportViewer() {
                 ))}
               </div>
               <p className="text-gray-500">{card.description}</p>
-              <Button className="mt-4 text-sm border-2" variant="ghost">
+              <Button
+                className="mt-4 text-sm border-2 border-gray-300"
+                variant="ghost"
+              >
                 Expand
               </Button>
             </CardContent>

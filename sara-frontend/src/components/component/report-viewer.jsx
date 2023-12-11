@@ -2,12 +2,11 @@
 
 import { useState } from "react";
 
-import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs } from "@/components/ui/tabs";
-import { Badge } from "@/components/ui/badge";
 import { Label } from "@/components/ui/label";
 import { formatSarif } from "@/lib/formatSarif";
+import IssueCard from "../ui/issue-card";
 
 export function ReportViewer({ report }) {
   console.log("from client side:", report, formatSarif(report));
@@ -81,27 +80,7 @@ export function ReportViewer({ report }) {
       </Tabs>
       <div className="space-y-4">
         {filteredCards.map((card, index) => (
-          <Card key={index} className="w-full">
-            <CardHeader>
-              <CardTitle>{card.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex gap-2">
-                {card.badge.map((badge, index) => (
-                  <Badge key={index} className="mb-2" variant="outline">
-                    {badge}
-                  </Badge>
-                ))}
-              </div>
-              <p className="text-gray-500">{card.description}</p>
-              <Button
-                className="mt-4 text-sm border-2 border-gray-300"
-                variant="ghost"
-              >
-                Expand
-              </Button>
-            </CardContent>
-          </Card>
+          <IssueCard key={index} card={card} />
         ))}
       </div>
     </div>

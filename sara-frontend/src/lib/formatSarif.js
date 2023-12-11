@@ -4,7 +4,9 @@ export function formatSarif(sarif) {
     issueCard.push({
       title: result.message.text,
       description: result.message.text,
-      severity: getRuleContext(result.rule.index, result.ruleId, sarif),
+      severity: {
+        ...getRuleContext(result.rule.index, result.ruleId, sarif),
+      },
       tags: result.ruleId,
       properties: {
         "File Path": result.locations[0].physicalLocation.artifactLocation.uri,
@@ -18,16 +20,19 @@ export function formatSarif(sarif) {
 }
 
 function getRuleContext(ruleIndex, ruleId, sarif) {
-  console.log(sarif);
-  // check the driver for rules array
   if (sarif.runs[0].tool.driver.rules.length >= ruleIndex) {
     // find the rule with the same index as the result
     const rule = sarif.runs[0].tool.driver.rules.find((rule) => {
       return rule.id === ruleId;
     });
     // return the rule's severity
-    return rule.defaultConfiguration.level;
+    return {
+      level: rule.defaultConfiguration.level,
+      shortDescription: rule.shortDescription.text,
+      fullDescription: rule.fullDescription.text,
+    };
   }
+
   let foundExtension;
   let foundRule;
 
@@ -48,5 +53,9 @@ function getRuleContext(ruleIndex, ruleId, sarif) {
       break;
     }
   }
-  return foundRule.defaultConfiguration.level;
+  return {
+    label: foundRule.defaultConfiguration.level,
+    shortDescription: foundRule.shortDescription.text,
+    fullDescription: foundRule.fullDescription.text,
+  };
 }

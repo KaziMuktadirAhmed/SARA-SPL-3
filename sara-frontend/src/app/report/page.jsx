@@ -1,6 +1,6 @@
 import { ReportViewer } from "@/components/component/report-viewer";
 
-export default function Report() {
+export default async function Report() {
   return (
     <div>
       <ReportViewer />

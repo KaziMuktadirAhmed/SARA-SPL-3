@@ -15,18 +15,22 @@ export function NewHome() {
         </div>
         <Card className="w-full max-w-md overflow-hidden bg-white rounded-lg shadow-md">
           <CardHeader className="px-6 py-4">
-            <h2 className="text-xl font-bold text-gray-800">File Upload</h2>
+            <h2 className="text-xl font-bold text-gray-800">Resource path</h2>
           </CardHeader>
           <CardContent className="p-6">
             <div className="grid gap-4">
               <div className="grid w-full max-w-sm items-center gap-1.5">
                 <Label
                   className="mb-2 text-sm font-bold text-gray-700"
-                  htmlFor="fileUpload"
+                  htmlFor="filePath"
                 >
-                  Upload Sarif report
+                  Sarif report path
                 </Label>
-                <Input id="fileUpload" type="file" />
+                <Input
+                  id="sarifFilePath"
+                  placeholder="Enter file path for sarif report"
+                  type="text"
+                />
               </div>
               <div className="grid w-full max-w-sm items-center gap-1.5">
                 <Label
@@ -38,12 +42,16 @@ export function NewHome() {
                 <Input
                   className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   placeholder="Enter file path for project source code"
-                  id="filePath"
+                  id="srcFilePath"
                   type="text"
                 />
               </div>
             </div>
-            <Button className="mt-6" size="lg" variant="outline">
+            <Button
+              className="mt-6 hover:bg-gray-100"
+              size="lg"
+              variant="outline"
+            >
               Start
             </Button>
           </CardContent>

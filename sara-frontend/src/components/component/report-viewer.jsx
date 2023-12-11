@@ -9,9 +9,9 @@ import { Badge } from "@/components/ui/badge";
 import { Label } from "@/components/ui/label";
 
 export function ReportViewer() {
-  const saraTags = ["All", "General", "Trust and Safety", "User Experience"];
   const [selectedTab, setSelectedTab] = useState("All");
 
+  const saraTags = ["All", "General", "Trust and Safety", "User Experience"];
   const cards = [
     {
       title: "Browser errors were logged to the console",

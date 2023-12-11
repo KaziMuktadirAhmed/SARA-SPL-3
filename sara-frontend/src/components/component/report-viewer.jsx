@@ -7,9 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Tabs } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Label } from "@/components/ui/label";
+import { formatSarif } from "@/lib/formatSarif";
 
 export function ReportViewer({ report }) {
-  console.log("from client side:", report);
+  console.log("from client side:", report, formatSarif(report));
   const [selectedTab, setSelectedTab] = useState("All");
 
   const saraTags = ["All", "General", "Trust and Safety", "User Experience"];

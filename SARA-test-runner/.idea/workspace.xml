@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="still test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/CFGGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ast_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/ast_output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast_output.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +102,8 @@
       <workItem from="1702038865462" duration="645000" />
       <workItem from="1702044082852" duration="1213000" />
       <workItem from="1702102884441" duration="13666000" />
-      <workItem from="1702191128633" duration="2642000" />
+      <workItem from="1702191128633" duration="5446000" />
+      <workItem from="1702228117644" duration="4322000" />
     </task>
     <task id="LOCAL-00001" summary="from intellij">
       <option name="closed" value="true" />
@@ -159,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702120690049</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="still test">
+      <option name="closed" value="true" />
+      <created>1702205811351</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702205811351</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,18 +192,11 @@
     <MESSAGE value="add FunctionBodyExtractor (experimental)" />
     <MESSAGE value="add MethodFinder (working)" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="really don't know what to do now" />
+    <MESSAGE value="still test" />
+    <option name="LAST_COMMIT_MESSAGE" value="still test" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/SARA/test.java</url>
-          <line>718</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="antlr.java.JavaParser$TypeDeclarationContext" memberName="exception" />

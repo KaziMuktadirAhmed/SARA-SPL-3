@@ -1,9 +1,27 @@
+"use client";
+
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
+import { useRouter } from "next/navigation";
+
 export function NewHome() {
+  const router = useRouter();
+
+  function handleClick(event) {
+    const sarifFilePath = document.getElementById("sarifFilePath").value;
+    const srcFilePath = document.getElementById("srcFilePath").value;
+    if (sarifFilePath !== "" || srcFilePath !== "") {
+      router.push(
+        `/report?sarifFilePath=${encodeURIComponent(
+          sarifFilePath
+        )}&srcFilePath=${encodeURIComponent(srcFilePath)}`
+      );
+    }
+  }
+
   return (
     <>
       <div className="container flex flex-col items-center px-4 py-8 mx-auto">
@@ -51,6 +69,7 @@ export function NewHome() {
               className="mt-6 hover:bg-gray-100"
               size="lg"
               variant="outline"
+              onClick={handleClick}
             >
               Start
             </Button>

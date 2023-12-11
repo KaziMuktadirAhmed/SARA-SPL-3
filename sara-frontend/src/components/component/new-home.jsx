@@ -24,7 +24,7 @@ export function NewHome() {
                   className="mb-2 text-sm font-bold text-gray-700"
                   htmlFor="fileUpload"
                 >
-                  Upload File
+                  Upload Sarif report
                 </Label>
                 <Input id="fileUpload" type="file" />
               </div>
@@ -33,11 +33,11 @@ export function NewHome() {
                   className="mb-2 text-sm font-bold text-gray-700"
                   htmlFor="filePath"
                 >
-                  File Path
+                  Project source path
                 </Label>
                 <Input
                   className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                  placeholder="Enter file path for the sarif report"
+                  placeholder="Enter file path for project source code"
                   id="filePath"
                   type="text"
                 />

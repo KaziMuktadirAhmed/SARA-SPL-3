@@ -20,7 +20,7 @@ public class test {
                 "import org.antlr.v4.runtime.Token;\n" +
                 "import org.antlr.v4.runtime.tree.ParseTree;\n" +
                 "\n" +
-                "public class MethodFinder {\n" +
+                "class MethodFinder {\n" +
                 "    public static ParserRuleContext findMethodForLine(int lineNumber, ParserRuleContext parseTree) {\n" +
                 "        return traverseForLine(lineNumber, parseTree);\n" +
                 "    }\n" +
@@ -59,6 +59,8 @@ public class test {
 
         newTest(24, tree);
         newTest2(24, tree);
+        newTest3(24, tree);
+
         printCodeSnippet(tree);
 
 //        AST to json conversion
@@ -94,6 +96,11 @@ public class test {
         } else {
             System.out.println("No method found for line " + lineNumber);
         }
+    }
+
+    private void newTest3(int lineNumber, ParserRuleContext parseTree) {
+        ParserRuleContext methodSubtree = MethodFinder.findMethodForLine(lineNumber, parseTree);
+        new CFGGenerator().generateCFG(methodSubtree);
     }
 
     private void writeToFile(String input) {

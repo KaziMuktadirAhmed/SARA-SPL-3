@@ -2,12 +2,19 @@ import { Button } from "@/components/ui/button";
 import { Tabs } from "@/components/ui/tabs";
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Label } from "@/components/ui/label";
 
 export function ReportViewer() {
   return (
     <div className="container p-6 mx-auto">
-      <h1 className="mb-6 text-3xl font-bold">Best Practices</h1>
-      <Tabs className="mb-6">
+      <h1 className="mb-6 text-3xl font-bold">Static analysis report</h1>
+      <Tabs className="flex items-center gap-4 mb-6">
+        <Label
+          className="text-base font-bold text-gray-700"
+          htmlFor="reportType"
+        >
+          SARA tags:
+        </Label>
         <div className="flex space-x-1">
           <Button variant="ghost">All</Button>
           <Button variant="ghost">General</Button>
@@ -21,6 +28,9 @@ export function ReportViewer() {
             <CardTitle>Browser errors were logged to the console</CardTitle>
           </CardHeader>
           <CardContent>
+            <Badge className="mb-2" variant="secondary">
+              General
+            </Badge>
             <Badge className="mb-2" variant="secondary">
               General
             </Badge>

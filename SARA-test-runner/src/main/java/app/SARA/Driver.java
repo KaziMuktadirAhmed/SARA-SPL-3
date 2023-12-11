@@ -11,7 +11,7 @@ import org.antlr.v4.runtime.tree.*;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class test {
+public class Driver {
     public void run()  {
         String javaCodeStr = "package app.SARA;\n" +
                 "\n" +

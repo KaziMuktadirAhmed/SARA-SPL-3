@@ -9,7 +9,6 @@ public class MethodFinder {
     public static ParserRuleContext findMethodForLine(int lineNumber, ParserRuleContext parseTree) {
         return traverseForLine(lineNumber, parseTree);
     }
-
     private static ParserRuleContext traverseForLine(int lineNumber, ParserRuleContext context) {
         for (int i = 0; i < context.getChildCount(); i++) {
             ParseTree child = context.getChild(i);

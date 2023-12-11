@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class ASTAnalyzer {
     ParseTree targetStatement;
     ParseTree methodBody;
+    ArrayList<ParseTree> statements;
 
     public ASTAnalyzer(int targetLineNo, ParserRuleContext methodSubtree) {
         this.methodBody = getMethodBody(methodSubtree);

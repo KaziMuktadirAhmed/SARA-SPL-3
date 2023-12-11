@@ -37,6 +37,7 @@ export function NewHome() {
                 </Label>
                 <Input
                   className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  placeholder="Enter file path for the sarif report"
                   id="filePath"
                   type="text"
                 />

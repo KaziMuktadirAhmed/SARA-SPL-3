@@ -15,32 +15,37 @@ export function ReportViewer({ report }) {
   const saraTags = ["All", "General", "Trust and Safety", "User Experience"];
   const cards = [
     {
+      level: "error",
       title: "Browser errors were logged to the console",
-      badge: ["General"],
+      saraTags: ["General"],
       description:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
     {
+      level: "warning",
       title: "Missing source maps for large first-party JavaScript",
-      badge: ["General"],
+      saraTags: ["General"],
       description:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
     {
+      level: "error",
       title: "Ensure CSP is effective against XSS attacks",
-      badge: ["General", "Trust and Safety"],
+      saraTags: ["General", "Trust and Safety"],
       description:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
     },
     {
+      level: "warning",
       title: "Issues were logged in the Issues panel in Chrome Devtools",
-      badge: ["General"],
+      saraTags: ["General"],
       description:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
+      level: "warning",
       title: "Detected JavaScript libraries",
-      badge: ["General", "User Experience"],
+      saraTags: ["General", "User Experience"],
       description:
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     },
@@ -53,7 +58,7 @@ export function ReportViewer({ report }) {
   const filteredCards =
     selectedTab === "All"
       ? cards
-      : cards.filter((card) => card.badge.includes(selectedTab));
+      : cards.filter((card) => card.saraTags.includes(selectedTab));
 
   return (
     <div className="container p-6 mx-auto">

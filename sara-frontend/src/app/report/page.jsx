@@ -8,6 +8,7 @@ export default async function Report({ searchParams }) {
   const { srcFilePath, sarifFilePath } = searchParams;
   const report = await readJSON(sarifFilePath);
   const results = report.runs[0].results;
+  let saraTags;
 
   await results.forEach(async (result, index) => {
     let location = path.join(
@@ -20,15 +21,12 @@ export default async function Report({ searchParams }) {
     await runCLICommand("dir");
     console.log(
       "command to be executed: ",
-      `java -jar .\\SARA_test_runner.jar ${location} ${targetLine} ${issueIndex}`
+      `java -jar .\\SARA-test-runner.jar ${location} ${targetLine} ${issueIndex}`
     );
     await runCLICommand(
-      `java -jar .\\SARA_test_runner.jar ${location} ${targetLine} ${issueIndex}`
+      `java -jar .\\SARA-test-runner.jar ${location} ${targetLine} ${issueIndex}`
     );
-
-    const saraTags = await readJSONFilesFromDirectory(
-      "H:\\Developement\\Classwork\\SPL-3\\SARA-SPL-3\\SARA-test-runner\\out\\artifacts\\SARA_test_runner_jar\\saraTags"
-    );
+    saraTags = await readJSONFilesFromDirectory(".\\saraTags");
     console.log(saraTags);
   });
 
@@ -38,7 +36,7 @@ export default async function Report({ searchParams }) {
 
   return (
     <div>
-      <ReportViewer report={report} />
+      <ReportViewer report={report} targetTags={saraTags} />
     </div>
   );
 }

@@ -35,10 +35,10 @@ public class Driver {
         JavaParser parser = new JavaParser(tokens);
         ParserRuleContext tree = parser.compilationUnit();
 
-        newTest(24, tree);
-        newTest2(24, tree);
-        newTest3(24, tree);
-        newTest4(31, tree);
+//        newTest(24, tree);
+//        newTest2(24, tree);
+//        newTest3(24, tree);
+//        newTest4(31, tree);
 
         getTagsForMethodBody(this.targetLineNumber, tree);
 

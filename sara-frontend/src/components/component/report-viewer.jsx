@@ -8,11 +8,16 @@ import { Label } from "@/components/ui/label";
 import { formatSarif } from "@/lib/formatSarif";
 import IssueCard from "../ui/issue-card";
 
-export function ReportViewer({ report }) {
+export function ReportViewer({ report, targetTags }) {
+  console.log("targetTags: ", targetTags);
   const [selectedTab, setSelectedTab] = useState("all");
 
   const saraTags = ["all", "ui", "network", "storage", "memory", "io"];
   let cards = formatSarif(report);
+  // cards = cards.map((card, index) => {
+  //   card.saraTags = targetTags[index];
+  //   return card;
+  // });
 
   const handleTabClick = (tag) => {
     setSelectedTab(tag);

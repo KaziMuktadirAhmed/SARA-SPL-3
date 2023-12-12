@@ -8,7 +8,6 @@ import com.google.gson.*;
 
 public class ASTToJSONConverter {
     public static JsonObject parseTreeToJson(ParseTree tree) {
-        System.out.println("jus for demo");
         JsonObject json = new JsonObject();
 
         if (tree instanceof ParserRuleContext) {

@@ -3,11 +3,13 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-export default function IssueCard({ card, targetTag }) {
+export default function IssueCard({ card }) {
   const [expanded, setExpanded] = useState(false);
   const handleExpandCollapse = () => {
     setExpanded(!expanded);
   };
+
+  console.log("card: ", card);
 
   return (
     <Card className="w-full">
@@ -26,14 +28,33 @@ export default function IssueCard({ card, targetTag }) {
       </CardHeader>
       <CardContent>
         <div className="flex gap-2">
-          <span className="mb-4">tag: </span>
           {card.saraTags.map((badge, index) => (
             <Badge key={index} className="mb-2" variant="outline">
               {badge}
             </Badge>
           ))}
         </div>
-        {expanded && <p className="text-gray-500">{card.description}</p>}
+        {expanded && (
+          <div className="flex flex-col gap-4">
+            <p className="text-gray-600">{card.description}</p>
+            <div className="flex flex-col w-auto gap-1 p-4 bg-gray-300">
+              <p className="font-bold text-black">Source file: </p>
+              <p className="font-mono text-gray-600">
+                {card.properties["File Path"]}
+              </p>
+              <p className="font-mono text-gray-600">
+                {" "}
+                at line no {card.properties["Line Number"]}
+              </p>
+            </div>
+            <div className="flex flex-col w-auto gap-1 p-4 bg-gray-300">
+              <p className="font-bold text-black">Full description: </p>
+              <p className="font-mono text-gray-600">
+                {card.severity.fullDescription}
+              </p>
+            </div>
+          </div>
+        )}
         <Button
           className="mt-4 text-sm border-2 border-gray-300"
           variant="ghost"

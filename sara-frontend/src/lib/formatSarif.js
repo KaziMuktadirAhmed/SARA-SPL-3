@@ -2,7 +2,7 @@ export function formatSarif(sarif) {
   const issueCard = [];
   sarif.runs[0].results.forEach((result) => {
     issueCard.push({
-      title: `${result.ruleId} - ${getFinalFileName(
+      title: `${result.ruleId}  --  ${getFinalFileName(
         result.locations[0].physicalLocation.artifactLocation.uri
       )}`,
       description: removeSquareBracketsAndNumbers(result.message.text),

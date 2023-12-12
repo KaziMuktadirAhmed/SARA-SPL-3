@@ -14,10 +14,10 @@ export function ReportViewer({ report, targetTags }) {
 
   const saraTags = ["all", "ui", "network", "storage", "memory", "io"];
   let cards = formatSarif(report);
-  // cards = cards.map((card, index) => {
-  //   card.saraTags = targetTags[index];
-  //   return card;
-  // });
+  cards = cards.map((card, index) => {
+    card.saraTags = targetTags[index];
+    return card;
+  });
 
   const handleTabClick = (tag) => {
     setSelectedTab(tag);

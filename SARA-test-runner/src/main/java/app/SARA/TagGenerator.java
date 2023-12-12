@@ -27,6 +27,23 @@ public class TagGenerator {
                 tags.add("io");
             }
         }
+
+        if(tags.size() == 0) {
+            for (String token : codeSnippet) {
+                if (isTagLoose(token, memoryTag)) {
+                    tags.add("memory");
+                } else if (isTagLoose(token, uiTag)) {
+                    tags.add("ui");
+                } else if (isTagLoose(token, networkTag)) {
+                    tags.add("network");
+                } else if (isTagLoose(token, storageTag)) {
+                    tags.add("storage");
+                } else if (isTagLoose(token, ioTag)) {
+                    tags.add("io");
+                }
+            }
+        }
+
         return tags;
     }
     private boolean isTag(String token, ArrayList<String> tags) {
@@ -39,4 +56,13 @@ public class TagGenerator {
         }
         return flag;
     }
+
+    private boolean isTagLoose(String token, ArrayList<String> tags) {boolean flag = false;
+        for (String tag : tags) {
+            if (token.toLowerCase().contains(tag)) {
+                flag = true;
+                break;
+            }
+        }
+        return flag;}
 }

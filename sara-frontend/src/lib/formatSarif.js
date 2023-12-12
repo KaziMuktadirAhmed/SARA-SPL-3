@@ -14,7 +14,7 @@ export function formatSarif(sarif) {
         getRuleContext(result.rule.index, result.ruleId, sarif).level ===
         "error"
           ? ["network", "memory"]
-          : ["UI"],
+          : ["ui"],
       tags: result.ruleId,
       properties: {
         "File Path": result.locations[0].physicalLocation.artifactLocation.uri,

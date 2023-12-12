@@ -15,22 +15,22 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Driver {
-    private int targetLineNumber;
-    private String javaCodeStr;
+    private int targetLineNumber = 15;
+    private String srcFilePath = "H:\\Developement\\Classwork\\SPL-3\\SARA-SPL-3\\SARA-test-runner\\src\\main\\java\\app\\SARA\\ASTToJSONConverter.java";
     private int issueIndex = 0;
 
     public Driver(int lineNumber) {
         this.targetLineNumber = lineNumber;
     }
 
-    public Driver(int lineNumber, String javaCodeStr, int issueIndex) {
+    public Driver(int lineNumber, String srcFilePath, int issueIndex) {
         this.targetLineNumber = lineNumber;
-        this.javaCodeStr = javaCodeStr;
+        this.srcFilePath = srcFilePath;
         this.issueIndex = issueIndex;
     }
 
     public void run() throws IOException {
-        JavaLexer lexer = new JavaLexer(CharStreams.fromPath(Path.of("H:\\Developement\\Classwork\\SPL-3\\SARA-SPL-3\\SARA-test-runner\\src\\main\\java\\app\\SARA\\ASTToJSONConverter.java")));
+        JavaLexer lexer = new JavaLexer(CharStreams.fromPath(Path.of(this.srcFilePath)));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JavaParser parser = new JavaParser(tokens);
         ParserRuleContext tree = parser.compilationUnit();
@@ -40,7 +40,7 @@ public class Driver {
         newTest3(24, tree);
         newTest4(31, tree);
 
-        getTagsForMethodBody(10, tree);
+        getTagsForMethodBody(this.targetLineNumber, tree);
 
         printCodeSnippet(tree);
 

@@ -6,3 +6,6 @@ first go to the project root and open a terminal
 then create a codeql db for that project src code:  codeql database create ./codeql-db --language=java --command="mvn compile" --overwrite
 (codeql cli automatically assumes that the current directory is project root)
 analyze database: codeql database analyze ./codeql-db --format=sarif-latest --sarif-category=java --output=./codeql-reports.sarif
+
+command for running the jar
+java -jar .\SARA-test-runner.jar H:\Developement\Classwork\SPL-3\SARA-SPL-3\SARA-test-runner\src\main\java\app\SARA\ASTToJSONConverter.java 14 2

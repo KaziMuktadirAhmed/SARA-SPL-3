@@ -12,7 +12,7 @@ export function ReportViewer({ report }) {
   console.log("from client side:", report, formatSarif(report));
   const [selectedTab, setSelectedTab] = useState("All");
 
-  const saraTags = ["All", "UI", "network", "storage", "memory"];
+  const saraTags = ["All", "ui", "network", "storage", "memory", "io"];
   let cards = [
     {
       level: "error",

@@ -10,6 +10,7 @@ import org.antlr.v4.runtime.tree.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashSet;
 
@@ -28,47 +29,8 @@ public class Driver {
         this.issueIndex = issueIndex;
     }
 
-    public void run()  {
-        String javaCodeStr = "package app.SARA;\n" +
-                "\n" +
-                "import antlr.java.JavaParser;\n" +
-                "import org.antlr.v4.runtime.ParserRuleContext;\n" +
-                "import org.antlr.v4.runtime.Token;\n" +
-                "import org.antlr.v4.runtime.tree.ParseTree;\n" +
-                "\n" +
-                "class MethodFinder {\n" +
-                "    public static ParserRuleContext findMethodForLine(int lineNumber, ParserRuleContext parseTree) {\n" +
-                "        return traverseForLine(lineNumber, parseTree);\n" +
-                "    }\n" +
-                "\n" +
-                "    private static ParserRuleContext traverseForLine(int lineNumber, ParserRuleContext context) {\n" +
-                "        for (int i = 0; i < context.getChildCount(); i++) {\n" +
-                "            ParseTree child = context.getChild(i);\n" +
-                "\n" +
-                "            if (child instanceof ParserRuleContext) {\n" +
-                "                ParserRuleContext childContext = (ParserRuleContext) child;\n" +
-                "\n" +
-                "                if (childContext instanceof JavaParser.MethodDeclarationContext) {\n" +
-                "                    Token startToken = childContext.getStart();\n" +
-                "                    Token stopToken = childContext.getStop();\n" +
-                "\n" +
-                "                    if (startToken.getLine() <= lineNumber && stopToken.getLine() >= lineNumber) {\n" +
-                "                        return childContext; // Found the MethodDeclarationContext covering the line\n" +
-                "                    }\n" +
-                "                }\n" +
-                "\n" +
-                "                // Recursively traverse into child contexts\n" +
-                "                ParserRuleContext result = traverseForLine(lineNumber, childContext);\n" +
-                "                if (result != null) {\n" +
-                "                    return result; // Return if found within this branch\n" +
-                "                }\n" +
-                "            }\n" +
-                "        }\n" +
-                "        return null; // Not found in this branch\n" +
-                "    }\n" +
-                "}\n";
-
-        JavaLexer lexer = new JavaLexer(CharStreams.fromString(javaCodeStr));
+    public void run() throws IOException {
+        JavaLexer lexer = new JavaLexer(CharStreams.fromPath(Path.of("H:\\Developement\\Classwork\\SPL-3\\SARA-SPL-3\\SARA-test-runner\\src\\main\\java\\app\\SARA\\ASTToJSONConverter.java")));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         JavaParser parser = new JavaParser(tokens);
         ParserRuleContext tree = parser.compilationUnit();

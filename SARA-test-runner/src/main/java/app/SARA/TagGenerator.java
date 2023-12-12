@@ -9,7 +9,7 @@ public class TagGenerator {
     private ArrayList<String> uiTag = new ArrayList<>(Arrays.asList("ui", "gui", "view", "window", "fx", "swing", "awt", "android"));
     private ArrayList<String> networkTag = new ArrayList<>(Arrays.asList("net", "http", "socket", "url", "uri", "ftp", "smtp", "imap", "pop3", "tcp", "udp", "ssl", "tls", "ssh", "dns", "dhcp", "ip", "icmp", "arp", "rarp", "icmpv6", "igmp", "bgp", "eigrp", "ospf", "rip", "pim", "lldp", "stp", "vtp", "lacp", "lldp", "cdp", "csrf"));
     private ArrayList<String> storageTag = new ArrayList<>(Arrays.asList("db", "sql", "nosql", "h2", "mysql", "mariadb", "postgresql", "oracle", "mongodb", "cassandra", "redis", "memcached", "couchdb", "couchbase", "ne"));
-    private ArrayList<String> ioTag = new ArrayList<>(Arrays.asList("io", "file", "stream", "reader", "writer", "input", "output", "inputstream", "outputstream", "bufferedreader", "bufferedwriter", "fileinputstream", "fileoutputstream", "filewriter", "filereader", "filechannel", "filelock", "filedescriptor", "System.in", "System.out", "System.err", "console", "scanner", "printwriter", "printstream", "datainputstream", "dataoutputstream", "objectinputstream", "objectoutputstream", "objectinput", "objectoutput", "objectstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor", "objectinputstream", "objectoutputstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor", "objectinputstream", "objectoutputstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor", "objectinputstream", "objectoutputstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor"));
+    private ArrayList<String> ioTag = new ArrayList<>(Arrays.asList("io", "file", "stream", "reader", "writer", "input", "output", "inputstream", "outputstream", "bufferedreader", "bufferedwriter", "fileinputstream", "fileoutputstream", "filewriter", "filereader", "filechannel", "filelock", "filedescriptor", "System.in", "System.out", "System.err", "console", "scanner", "printwriter", "printstream", "datainputstream", "dataoutputstream", "objectinputstream", "objectoutputstream", "objectinput", "objectoutput", "objectstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor", "objectinputstream", "objectoutputstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor", "objectinputstream", "objectoutputstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor", "objectinputstream", "objectoutputstream", "objectwriter", "objectreader", "objectchannel", "objectlock", "objectdescriptor", "system"));
 
 //    Backup
     public HashSet<String> getTags(ArrayList<String> codeSnippet) {
@@ -32,7 +32,7 @@ public class TagGenerator {
     private boolean isTag(String token, ArrayList<String> tags) {
         boolean flag = false;
         for (String tag : tags) {
-            if (token.toLowerCase().contains(tag)) {
+            if (token.toLowerCase().equals(tag)) {
                 flag = true;
                 break;
             }

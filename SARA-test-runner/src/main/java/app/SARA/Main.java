@@ -1,7 +1,9 @@
 package app.SARA;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
         new Driver(10).run();
 //        hi

@@ -2,11 +2,19 @@ export function formatSarif(sarif) {
   const issueCard = [];
   sarif.runs[0].results.forEach((result) => {
     issueCard.push({
-      title: result.message.text,
-      description: result.message.text,
+      title: `${result.ruleId} - ${getFinalFileName(
+        result.locations[0].physicalLocation.artifactLocation.uri
+      )}`,
+      description: removeSquareBracketsAndNumbers(result.message.text),
       severity: {
         ...getRuleContext(result.rule.index, result.ruleId, sarif),
       },
+      level: getRuleContext(result.rule.index, result.ruleId, sarif).level,
+      saraTags:
+        getRuleContext(result.rule.index, result.ruleId, sarif).level ===
+        "error"
+          ? ["network", "memory"]
+          : ["UI"],
       tags: result.ruleId,
       properties: {
         "File Path": result.locations[0].physicalLocation.artifactLocation.uri,
@@ -17,6 +25,16 @@ export function formatSarif(sarif) {
     });
   });
   return issueCard;
+}
+
+function getFinalFileName(filePath) {
+  const parts = filePath.split("/");
+  const fileName = parts[parts.length - 1];
+  return fileName;
+}
+
+function removeSquareBracketsAndNumbers(inputString) {
+  return inputString.replace(/\[(.*?)\]\(\d+\)/g, "$1");
 }
 
 function getRuleContext(ruleIndex, ruleId, sarif) {
@@ -54,7 +72,7 @@ function getRuleContext(ruleIndex, ruleId, sarif) {
     }
   }
   return {
-    label: foundRule.defaultConfiguration.level,
+    level: foundRule.defaultConfiguration.level,
     shortDescription: foundRule.shortDescription.text,
     fullDescription: foundRule.fullDescription.text,
   };

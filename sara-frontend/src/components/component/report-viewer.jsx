@@ -12,8 +12,8 @@ export function ReportViewer({ report }) {
   console.log("from client side:", report, formatSarif(report));
   const [selectedTab, setSelectedTab] = useState("All");
 
-  const saraTags = ["All", "General", "Trust and Safety", "User Experience"];
-  const cards = [
+  const saraTags = ["All", "UI", "network", "storage", "memory"];
+  let cards = [
     {
       level: "error",
       title: "Browser errors were logged to the console",
@@ -50,6 +50,8 @@ export function ReportViewer({ report }) {
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     },
   ];
+
+  cards = formatSarif(report);
 
   const handleTabClick = (tag) => {
     setSelectedTab(tag);

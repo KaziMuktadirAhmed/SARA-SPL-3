@@ -27,7 +27,7 @@ public class TagGenerator {
                 tags.add("io");
             }
         }
-        return (HashSet<String>) tags.stream().toList();
+        return tags;
     }
     private boolean isTag(String token, ArrayList<String> tags) {
         boolean flag = false;

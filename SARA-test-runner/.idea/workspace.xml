@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SARA-test-runner:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="really don't know what to do now">
-      <change afterPath="$PROJECT_DIR$/manifest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/JsonBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/TagGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/ASTAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/ASTAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/CFGGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/CFGGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/JsonBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/JsonBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/TagGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/TagGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +57,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.35402298",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -115,7 +115,7 @@
       <workItem from="1702102884441" duration="13666000" />
       <workItem from="1702191128633" duration="5446000" />
       <workItem from="1702228117644" duration="19607000" />
-      <workItem from="1702324534552" duration="9778000" />
+      <workItem from="1702324534552" duration="10858000" />
     </task>
     <task id="LOCAL-00001" summary="from intellij">
       <option name="closed" value="true" />

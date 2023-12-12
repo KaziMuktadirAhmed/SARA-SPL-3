@@ -16,7 +16,7 @@ import java.util.HashSet;
 
 public class Driver {
     private int targetLineNumber = 15;
-    private String srcFilePath = "H:\\Developement\\Classwork\\SPL-3\\SARA-SPL-3\\SARA-test-runner\\src\\main\\java\\app\\SARA\\ASTToJSONConverter.java";
+    private String srcFilePath;
     private int issueIndex = 0;
 
     public Driver(int lineNumber) {

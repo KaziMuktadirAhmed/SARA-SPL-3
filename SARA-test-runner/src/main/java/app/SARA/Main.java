@@ -11,7 +11,7 @@ public class Main {
             String issueIndex = args[2];
             new Driver(Integer.parseInt(targetLineNo), filePath, Integer.parseInt(issueIndex)).run();
         }
-        new Driver(10).run();
+//        new Driver(10).run();
 //        hi
     }
 

@@ -11,8 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="really don't know what to do now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/JsonBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/JsonBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/TagGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/TagGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SARA_test_runner_jar/SARA-test-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SARA_test_runner_jar/SARA-test-runner.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1702102884441" duration="13666000" />
       <workItem from="1702191128633" duration="5446000" />
       <workItem from="1702228117644" duration="19607000" />
-      <workItem from="1702324534552" duration="10858000" />
+      <workItem from="1702324534552" duration="12892000" />
     </task>
     <task id="LOCAL-00001" summary="from intellij">
       <option name="closed" value="true" />

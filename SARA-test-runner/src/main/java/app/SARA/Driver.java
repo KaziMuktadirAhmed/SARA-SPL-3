@@ -10,15 +10,24 @@ import org.antlr.v4.runtime.tree.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Driver {
     private int targetLineNumber;
     private String javaCodeStr;
-    private int issueIndex;
+    private int issueIndex = 0;
 
     public Driver(int lineNumber) {
         this.targetLineNumber = lineNumber;
     }
+
+    public Driver(int lineNumber, String javaCodeStr, int issueIndex) {
+        this.targetLineNumber = lineNumber;
+        this.javaCodeStr = javaCodeStr;
+        this.issueIndex = issueIndex;
+    }
+
     public void run()  {
         String javaCodeStr = "package app.SARA;\n" +
                 "\n" +
@@ -68,6 +77,8 @@ public class Driver {
         newTest2(24, tree);
         newTest3(24, tree);
         newTest4(31, tree);
+
+        getTagsForMethodBody(10, tree);
 
         printCodeSnippet(tree);
 
@@ -160,5 +171,9 @@ public class Driver {
     private void getTagsForMethodBody(int lineNumber, ParserRuleContext parseTree) {
         ParserRuleContext methodSubtree = MethodFinder.findMethodForLine(lineNumber, parseTree);
         ASTAnalyzer analyzer = new ASTAnalyzer(lineNumber, methodSubtree);
+        ParseTree methodBody = analyzer.getMethodBody();
+        ArrayList<String> tokens = analyzer.buildTokenCollection(methodBody);
+        HashSet<String> tags = new TagGenerator().getTags(tokens);
+        JsonBuilder.writeHashSetToJsonFile(tags, "./saraTags/" + this.issueIndex + ".json");
     }
 }

@@ -1,6 +1,7 @@
 import { exec } from "child_process";
 
 export async function runCLICommand(command) {
+  console.log(`Running command: ${command}`);
   return new Promise((resolve, reject) => {
     const childProcess = exec(command);
 

@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3add9e9-279c-453f-971a-bdead61ebba1" name="Changes" comment="really don't know what to do now">
+      <change afterPath="$PROJECT_DIR$/manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/JsonBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SARA/TagGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/ASTAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/ASTAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/CFGGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/CFGGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SARA/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SARA/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,31 +40,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="git stash" />
       <command value="git pull" />
       <command value="git stash clear" />
+      <command value="mvn package" />
     </option>
   </component>
   <component name="RunManager">
@@ -104,7 +115,7 @@
       <workItem from="1702102884441" duration="13666000" />
       <workItem from="1702191128633" duration="5446000" />
       <workItem from="1702228117644" duration="19607000" />
-      <workItem from="1702324534552" duration="1304000" />
+      <workItem from="1702324534552" duration="9778000" />
     </task>
     <task id="LOCAL-00001" summary="from intellij">
       <option name="closed" value="true" />

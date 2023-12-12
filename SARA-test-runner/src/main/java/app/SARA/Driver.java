@@ -12,6 +12,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Driver {
+    private int targetLineNumber;
+    private String javaCodeStr;
+    private int issueIndex;
+
+    public Driver(int lineNumber) {
+        this.targetLineNumber = lineNumber;
+    }
     public void run()  {
         String javaCodeStr = "package app.SARA;\n" +
                 "\n" +
@@ -60,6 +67,7 @@ public class Driver {
         newTest(24, tree);
         newTest2(24, tree);
         newTest3(24, tree);
+        newTest4(31, tree);
 
         printCodeSnippet(tree);
 
@@ -103,6 +111,14 @@ public class Driver {
         new CFGGenerator().generateCFG(methodSubtree);
     }
 
+    private void newTest4(int lineNumber, ParserRuleContext parseTree) {
+        ParserRuleContext methodSubtree = MethodFinder.findMethodForLine(lineNumber, parseTree);
+        ASTAnalyzer analyzer = new ASTAnalyzer(lineNumber, methodSubtree);
+        ParseTree methodBody = analyzer.getMethodBody();
+        ParseTree statement = analyzer.findStatementAtLine(lineNumber, methodBody);
+        System.out.println("statement : " + analyzer.buildCodeSnippet(statement));
+    }
+
     private void writeToFile(String input) {
         System.out.println("writing");
         try (FileWriter fileWriter = new FileWriter("ast_output.json")) {
@@ -139,5 +155,10 @@ public class Driver {
             }
         }
         return null;
+    }
+
+    private void getTagsForMethodBody(int lineNumber, ParserRuleContext parseTree) {
+        ParserRuleContext methodSubtree = MethodFinder.findMethodForLine(lineNumber, parseTree);
+        ASTAnalyzer analyzer = new ASTAnalyzer(lineNumber, methodSubtree);
     }
 }

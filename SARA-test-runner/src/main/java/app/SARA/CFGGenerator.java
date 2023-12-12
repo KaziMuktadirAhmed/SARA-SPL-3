@@ -58,7 +58,6 @@ public class CFGGenerator {
         }
     }
 
-//    Build out code snippet from BlockStatementContext
     public String buildCodeSnippet(ParseTree node) {
         StringBuilder snippet = new StringBuilder();
         buildCodeSnippetDFS(node, snippet);
@@ -74,6 +73,4 @@ public class CFGGenerator {
             }
         }
     }
-
-    // Other methods for CFG traversal, path extraction, etc.
 }
